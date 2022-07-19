@@ -44,14 +44,14 @@
 
 
         img{
-            height: 250px;
-            width: 220px;
-            padding: 15px;
-            border-radius: 20px;
+            height: 400px;
+            width: 500px;
+            
+            
         }
     </style>
 </head>
-<body style="text-align: center ;  background-color: aqua; display: block ; align-items: center;">
+<body style="text-align: center ;  background-color: aqua; display: block ; align-items: center; background-image: url(photo-1555505019-8c3f1c4aba5f.jpeg);">
     
     <div class="topnav">
         <a href="HelloWorld.html">Home</a>
@@ -66,6 +66,7 @@
         </DIV>
         <br>
         <br>
+        
         <div style="background-color: orange; padding: 20px;">
             
             First Name:
@@ -74,12 +75,24 @@
             Last Name:
             <input type="text" style="padding:5px ; ">
             <br><br>
-            <div>
+            <div style="position: relative ; top: 2px ; right: 67px;">
             Gender:
-            <select>
+            <select style="position:relative ; left: 25px;">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
+            </div>
+            <br>
+            <div style="position:relative ; left: 24px;" >
+            Role:
+            <input type="radio" name="role" id="batsman" checked>
+            <label for="batsman">Batsman</label>
+            
+            <input type="radio" name="role" id="bowler">
+            <label for="bowler">Bowler</label>
+           
+            <input type="radio" name="role" id="all-rounder">
+            <label for="all-rounder">All-Rounder</label>
             </div>
             <br>
             <input type="submit">
