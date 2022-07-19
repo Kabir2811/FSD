@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kabir Pandey</title>
-
     <style>
+        .formbg{
+            background-color: purple;
+            padding: 20px;
+            text-align: center;
+   
+        }
         body{
             margin: 10px;
             text-align: center;
@@ -46,26 +51,40 @@
         }
     </style>
 </head>
-<body>
-    
+<body style="text-align: center ;  background-color: aqua; display: block ; align-items: center;">
     
     <div class="topnav">
-        <a class="active" href="HelloWorld.html">Home</a>
+        <a href="HelloWorld.html">Home</a>
         <a href="news.html">News</a>
         <a href="table.html">Table</a>
-        <a href="form.html">Form</a>
+        <a class="active" href="form.html">Form</a>
     </div>
-    <img src="C:\Users\kabir\OneDrive\Desktop\FSD\85537F8E-51F2-45DE-80F6-0EAB3A6648AD.JPG" alt="Photo">
-    <div style="margin-left: 20px;">
-        
-        <a href="https://www.linkedin.com/in/kabir-pandey-10693b1b2/" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/kabir_pandey28" target="_blank">Twitter</a>
-        <a href="mailto: pandey.kabir77@gmail.com">Email</a>
-        
-    </div>
-    
-    
+    <form style="display:block ; margin-left: 25%; margin-right: 25%;">
+        <br>
+        <DIV class="formbg">
+            <h1>Google Form</h1>
+        </DIV>
+        <br>
+        <br>
+        <div style="background-color: orange; padding: 20px;">
+            
+            First Name:
+            <input type="text" style="padding:5px ;">
+            <br><br>
+            Last Name:
+            <input type="text" style="padding:5px ; ">
+            <br><br>
+            <div>
+            Gender:
+            <select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            </div>
+            <br>
+            <input type="submit">
+            
+        </div>
+    </form>
 </body>
 </html>
-
-
