@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <title>Parallax</title>
+    <style>
+        
+        body,html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        }
+        .bgimg-1 {
+        background-image: url(gary-lopater-PBHwSmhyt9w-unsplash.jpg);
+        min-height: 100%;
+        }
+
+        .bgimg-2 {
+        background-image: url(jirasin-yossri-W_29nYyiIpA-unsplash.jpg);
+        min-height: 400px;
+        }
+
+        .bgimg-3 {
+        background-image: url(marc-kleen-eRwmBvhfvG8-unsplash.jpg);
+        min-height: 400px;
+        }
+
+        .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        }
+
+        .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+        }
+
+        h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+        }
+
+        .card img{
+          image-rendering: crisp-edges;
+          max-height: 300px;
+          
+        }
+        .dropdown-menu{
+          background-color: #ddd;
+        }
+        
+        
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <div class="bgimg-1">
+      <div class="caption">
+      <span class="border">Hello</span>
+      </div>
+    </div>
+    
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center; padding: 50px 20px;">Parallax</h3>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Nature_HD_pictures.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Greenery</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, adipisci delectus similique quisquam nobis assumenda laudantium quia minima laboriosam totam quasi dolorem atque iusto beatae dolorum? Deserunt fuga placeat praesentium!</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Boxed water is better</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, non tenetur. Dolorum error odio ducimus quas eos corrupti labore ipsam, aliquam cupiditate reiciendis tempore quam voluptatem ullam doloremque sunt quisquam.</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1586407014176-b592d6e2d16b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Butterfly</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam, eum voluptatibus ea asperiores, dicta aperiam provident aliquid corrupti magni porro sed. Deserunt perspiciatis voluptate, quos minus ducimus quaerat provident.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bgimg-2">
+      <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Parallax</span>
+      </div>
+    </div>
+    
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea voluptatibus, deserunt alias delectus minus possimus, voluptates, beatae perferendis neque quam pariatur recusandae dolores tempora dolorem fuga quo dolor blanditiis ab!</p>
+      </div>
+    </div>
+    
+    <div class="bgimg-3">
+      <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Parallax</span>
+      </div>
+    </div>
+    
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+      </div>
+    </div>
+    
+    <div class="bgimg-1">
+      <div class="caption">
+      <span class="border">END OF PAGE</span>
+      </div>
+    </div>
+    
+    
+</body>
+</html>
+

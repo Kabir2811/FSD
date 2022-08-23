@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>DOM Practice</title>
+    <script>
+        function changeimg() {
+            if (document.getElementById("img1").src = "photo-1541963463532-d68292c34b19.jpeg") {
+                document.getElementById("img1").src = "tree-736885__480.jpg";
+            }
+            else {
+                document.getElementById("img1").src = "photo-1541963463532-d68292c34b19.jpeg"
+            }
+        }
+
+        function setBodyAttr(attr, value) {
+            if (document.body) {
+                eval('document.body.' + attr + '="' + value + '"');
+            }
+            else {
+                notSupported();
+            }
+
+        }
+
+        function coinFlip() {
+            (Math.floor(Math.random() * 2) == 0) ? alert("it is a head") : alert('It is tail')
+        }
+    </script>
+
+</head>
+
+<body>
+    <center>
+        <button style="padding: 20px; background-color: blueviolet;"
+            onclick="getElementById('demo').innerHTML=Date()">Date and Time</button>
+        <p id="demo"></p>
+
+        <div style="background-color: rgb(160, 210, 210);">
+            <img src="photo-1541963463532-d68292c34b19.jpeg" id="img1" onclick="changeimg()">
+        </div>
+
+
+        <div style="background-color: aqua; padding:25px ;">
+            <button onclick="document.getElementById('coin').innerHTML =coinFlip()">Flip a Coin</button>
+
+        </div>
+
+        <div>
+            <font size=20>Select Text Colour : </font>
+            <select style="font-size: 20px; width:120px ; height: 25px;"
+                onchange="setBodyAttr('text',this.options[this.selectedIndex].value);">
+                <option value="black">Black</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="purple">purple</option>
+                <option value="blue">blue</option>
+                
+
+
+            </select>
+        </div>
+    </center>
+</body>
+
+</html>

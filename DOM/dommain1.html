@@ -1,0 +1,111 @@
+<!-- <html>
+    <head>
+        <title>
+
+        </title>
+        <script>
+            function pr()
+            {
+                document.getElementById('result').innerHTML=document.getElementById('fname').value + " " +document.getElementById('mname').value + " " + document.getElementById('lname').value
+            }
+        </script>
+    </head>
+    <body>
+        <form action="#" method="get">
+            Last name:    <input type="text" name="lname" id="lname"><br/>
+            First name:   <input type="text" name="fname" id="fname"><br/>
+            Middle name:  <input type="text" name="mname" id ="mname"><br/>
+            
+            <br>
+            <input type="button" value="Submit" onClick="pr()">
+          </form>
+          Name: <span id="result"></span>
+    </body>
+</html> -->
+
+<html>
+
+<head>
+    <title>
+        Form
+    </title>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js">
+
+
+
+        function pr1() {
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("gender1").value;
+
+            document.getElementById("info").innerHTML = 
+            "Name : " + a + " " + b + "\n" + 
+            "Gender : " + c; 
+        }
+    </script>
+
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <form action="#" method="get" style="display:block ; margin-left: 25%; margin-right: 25%;">
+        <br>
+        <DIV style="background-color: purple;
+        padding: 20px;
+        text-align: center;">
+            <h1>Google Form</h1>
+        </DIV>
+        <br>
+        <br>
+
+        <div style="background-color: orange; padding: 20px;">
+
+            First Name:
+            <input type="text" style="padding:5px ;" id="fname" name="fname">
+            <br><br>
+            Last Name:
+            <input type="text" style="padding:5px ;" id="lname" name="lname">
+            <br><br>
+            <div style="position: relative ; top: 2px ;">
+                Gender:
+                <select style="position:relative ; left: 25px;" id="gender1">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <br>
+
+            <div style="position:relative ; left: 25px;">
+                Role:
+                <input type="radio" name="role" id="batsman" checked>
+                <label for="batsman">Batsman</label>
+
+                <input type="radio" name="role" id="bowler">
+                <label for="bowler">Bowler</label>
+
+                <input type="radio" name="role" id="all-rounder">
+                <label for="all-rounder">All-Rounder</label>
+            </div>
+            <br>
+            <!-- <button type="button" class="btn btn-primary" onclick="pr()">Submit</button> -->
+            <input type="button" value="Submit" onclick="pr1()">
+            <br>
+            <br>
+            <textarea name="info" id="info" cols="50" rows="10"></textarea>
+
+        </div>
+    </form>
+    <!-- <div style="margin-left:25% ; margin-right: 25%; background-color: aqua;">
+        
+        Name: <span id="name"></span>
+        <br>
+        <br>
+        Gender: <span id="gender"></span>
+        <br>
+        <br>
+        Role: <span id="role"></span>
+    </div> -->
+</body>
+
+</html>

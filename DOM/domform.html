@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <script>
+        function mySummary() {
+            var a = document.getElementById("name").value;
+            var b = document.getElementById("phone").value;
+            var c = document.getElementsByName("contact").value;
+            var d = document.getElementById("moreinfo").value;
+            document.getElementById("Summary").innerHTML =
+                "Name: " + a + "\n" +
+                "Phone: " + b + "\n" +
+                
+        }
+    </script>
+    <style>
+        body{
+            text-align: center;
+        }
+        form{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form style="padding: 100px;">
+        <h1>Form</h1>
+        <input type="text" id="name" onChange="mySummary();" placeholder="Name" /><br><br>
+        <input type="tel" id="phone" onChange="mySummary();" placeholder="Phone Number"/><br><br>
+        <textarea id="Summary" rows="10" cols="30"></textarea>
+    </form>
+</body>
+
+</html>

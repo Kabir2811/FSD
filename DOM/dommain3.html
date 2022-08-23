@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <script>
+        function pr1() {
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("email").value;
+            var d = document.getElementById("phn").value;
+            document.getElementById("info").innerHTML =
+                "Name : " + a + " " + b + "\n" +
+                "Email ID : " + c + "\n" +
+                "Phone No. : " + d;
+        }
+    </script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        body{
+            height: 100%;
+        }
+        .form-group{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        form{
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h1>Form</h1>
+        <img src="../Assignment 1/drops-of-water-water-nature-liquid-40784.webp" alt="Photo">
+        <div class="form-group">
+            <!-- <label for="fname">First Name</label> -->
+            <input type="text" class="form-control" id="fname" placeholder="First Name" onChange="pr1();" />
+        </div>
+        <div class="form-group">
+            <!-- <label for="lname">Last Name</label> -->
+            <input type="text" class="form-control" id="lname" placeholder="Last Name" onChange="pr1();" />
+        </div>
+        <div class="form-group">
+            <!-- <label for="email">Email ID</label> -->
+            <input type="email" class="form-control" id="email" placeholder="Email ID" onChange="pr1();" />
+        </div>
+        <div class="form-group">
+            <!-- <label for="lname">Phone No.</label> -->
+            <input type="tel" class="form-control" id="phn" placeholder="Phone Number" onChange="pr1();" />
+        </div>
+        <br>
+
+        <textarea id="info" cols="50" rows="10"></textarea>
+
+    </form>
+
+
+</body>
+
+</html>
